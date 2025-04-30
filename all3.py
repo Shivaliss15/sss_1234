@@ -1,5 +1,3 @@
-exp 7 interfacing all
-
 
 import time
 import board
