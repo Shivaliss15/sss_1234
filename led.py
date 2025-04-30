@@ -35,5 +35,25 @@ except KeyboardInterrupt:
 
 
 
+
+
+
+
+try:
+    while True:
+        # Turn LEDs ON one by one
+        for pin in led_pins:
+            GPIO.output(pin, GPIO.HIGH)
+            time.sleep(0.5)
+
+        # Turn LEDs OFF one by one in reverse order
+        for pin in reversed(led_pins):
+            GPIO.output(pin, GPIO.LOW)
+            time.sleep(0.5)
+
+
+
+
+
 sudo apt update
 sudo apt install python3-rpi.gpio
